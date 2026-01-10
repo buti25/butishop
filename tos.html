@@ -9,8 +9,9 @@
 body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #14001a, #2d0033);
+    background: linear-gradient(135deg, #1a001f, #2d0033);
     color: #ffffff;
+    line-height: 1.8;
 }
 
 header {
@@ -22,65 +23,69 @@ header {
 
 header h1 {
     margin: 0;
-    color: #f5d0fe;
+    font-size: 34px;
     letter-spacing: 2px;
+    color: #e9d5ff;
 }
 
 nav {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
 }
 
 nav a {
-    color: #d8b4fe;
-    margin: 0 15px;
+    color: #e9d5ff;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+    text-shadow: 0 0 10px #c084fc;
+}
+
+/* フェードイン */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container {
     max-width: 900px;
-    margin: 50px auto;
-    padding: 25px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-.tos-box {
-    background: #24002e;
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
-}
-
-.tos-box h2 {
-    text-align: center;
+.container h2 {
     color: #f5d0fe;
-    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
-.notice {
-    text-align: center;
-    color: #e9d5ff;
-    margin-bottom: 35px;
-    font-weight: bold;
-}
-
-.section {
-    margin-bottom: 30px;
-}
-
-.section h3 {
-    color: #c084fc;
-    margin-bottom: 10px;
-}
-
-.section p,
-.section li {
-    font-size: 15px;
-    line-height: 1.8;
+.container p {
     color: #e9d5ff;
 }
 
-ul {
-    padding-left: 20px;
+.container ul {
+    margin-left: 20px;
+}
+
+.footer-note {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #5b21b6;
+    color: #d8b4fe;
+    font-size: 14px;
 }
 
 .rep-link {
@@ -90,18 +95,11 @@ ul {
 }
 
 .rep-link:hover {
-    text-shadow: 0 0 8px #c084fc;
-}
-
-.footer-note {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #d8b4fe;
-    text-align: center;
+    text-shadow: 0 0 10px #c084fc;
 }
 
 footer {
-    margin-top: 60px;
+    background: #1a001f;
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -112,132 +110,72 @@ footer {
 <body>
 
 <header>
-    <h1>BUTI SHOP</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-    </nav>
+    <h1>BUTI SHOP 利用規約</h1>
 </header>
 
-<div class="container">
-    <div class="tos-box">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="tos.html">Tos</a>
+</nav>
 
-        <h2>利用規約</h2>
-        <div class="notice">
-            認証した時点で本規約に同意したものとします。
-        </div>
+<div class="container fade-in">
 
-        <div class="section">
-            <h3>｜1｜宣伝ルール</h3>
-            <p>
-                このサーバーでの宣伝はスロットのみです。<br>
-                雑談等で勧誘を行った場合、タイムアウト処置を行います。
-            </p>
-        </div>
+<p><strong>認証した時点でこの規約に同意したものとします。</strong></p>
 
-        <div class="section">
-            <h3>｜2｜個人間の取引について</h3>
-            <p>
-                WTS・WTB等の個人間取引において発生したトラブルについて、
-                サーバー管理者および責任者は一切の責任を負いません。
-            </p>
-        </div>
+<h2>｜1｜宣伝ルール</h2>
+<p>このサーバーでの宣伝はスロットのみです。<br>
+雑談等で勧誘した場合、タイムアウト処置を行います。</p>
 
-        <div class="section">
-            <h3>｜3｜迷惑行為</h3>
-            <p>
-                公共の場での喧嘩や迷惑行為が確認された場合、
-                タイムアウトまたはB4N等の処置を行います。<br>
-                また、当サーバーのスタッフ等の有権者に迷惑をかけた場合も
-                同様の対応を行うことがあります。
-            </p>
-        </div>
+<h2>｜2｜個人間の取引について</h2>
+<p>WTS・WTBなどの個人間取引で問題が発生した場合、<br>
+鯖主および責任者は一切の責任を負いません。</p>
 
-        <div class="section">
-            <h3>｜4｜催促・乞食行為</h3>
-            <p>
-                重度の催促行為や乞食行為が確認された場合、
-                長期間のタイムアウトまたは鯖B4N等の処置を行います。
-            </p>
-        </div>
+<h2>｜3｜迷惑行為</h2>
+<p>喧嘩・迷惑行為を公共の場で行った場合、<br>
+タイムアウトまたはBAN等の処置を取ります。</p>
 
-        <div class="section">
-            <h3>｜5｜チケットルール</h3>
-            <p>以下の行為が確認された場合、一時的なタイムアウト処置を行います。</p>
-            <ul>
-                <li>チケット発行後、10分以上無言で放置した場合</li>
-                <li>短期間に大量のチケットを発行した場合</li>
-            </ul>
-        </div>
+<h2>｜4｜催促・乞食行為</h2>
+<p>過度な催促・乞食行為は、<br>
+長期間のタイムアウトまたはBAN対象となります。</p>
 
-        <div class="section">
-            <h3>｜6｜詐欺・不正行為</h3>
-            <p>
-                詐欺・なりすまし・虚偽報告・虚偽通報・不正取得などの
-                悪質な行為が確認された場合、B4Nおよび通報対応を行います。
-            </p>
-        </div>
+<h2>｜5｜チケットルール</h2>
+<ul>
+    <li>チケット発行後、10分以上無言で放置</li>
+    <li>短期間で大量のチケットを発行</li>
+</ul>
 
-        <div class="section">
-            <h3>｜7｜取引時の注意点</h3>
-            <p>
-                トラブル防止のため、取引時には可能な限り
-                スクリーンショット等の証拠を保存してください。<br>
-                証拠がない場合、対応できないことがあります。
-            </p>
-        </div>
+<h2>｜6｜詐欺・不正行為</h2>
+<p>詐欺・なりすまし・虚偽報告などの行為が確認された場合、<br>
+即BANおよび通報対応を行います。</p>
 
-        <div class="section">
-            <h3>｜8｜荒らし行為</h3>
-            <p>
-                スパム・無意味な連投・暴言・過度な煽り等の荒らし行為は、
-                警告なしで即タイムアウトまたはB4N対象となります。
-            </p>
-        </div>
+<h2>｜7｜取引時の注意点</h2>
+<p>トラブル防止のため、<br>
+スクリーンショットなどの証拠を残してください。</p>
 
-        <div class="section">
-            <h3>｜9｜複数アカウントの利用について</h3>
-            <p>
-                不正防止のため、配布企画等での複数アカウント（サブ垢等）の
-                使用は禁止です。発覚した場合、すべての関連アカウントを
-                B4N処理します。
-            </p>
-        </div>
+<h2>｜8｜荒らし行為</h2>
+<p>スパム・暴言・煽り行為などは、<br>
+警告なしで即処罰対象となります。</p>
 
-        <div class="section">
-            <h3>｜10｜保証について</h3>
-            <p>
-                実績の記載がない場合、保証は無効となります。<br>
-                責任者のアカウントまたは当サーバーのいずれか、
-                または両方が利用不能となった場合の
-                交換・返金保証は行いません。
-            </p>
-        </div>
+<h2>｜9｜複数アカウント</h2>
+<p>配布企画等での複数アカウント使用は禁止です。<br>
+発覚した場合、関連アカウントをすべてBANします。</p>
 
-        <div class="section">
-            <h3>｜11｜支払いについて</h3>
-            <p>
-                対応前の送金行為、PayPay送金リンクでの支払いは
-                対応不可とし、没収処置を行います。<br>
-                原則として、スタッフから請求リンクまたはアドレスが
-                送信された場合（Bot使用を含む）のみ送金し、
-                指示に従ってください。
-            </p>
-        </div>
+<h2>｜10｜保証・支払い</h2>
+<p>実績が記載されていない場合、保証は無効です。<br>
+スタッフの指示なしに送金した場合、対応不可となります。</p>
 
-        <div class="footer-note">
-            この規約は管理者またはスタッフにより、
-            予告なく変更される場合があります。<br><br>
-            最終更新日：2025/10/26 01:10<br>
-            代表：
-            <a href="https://discord.com/users/167336342227779584"
-               class="rep-link"
-               target="_blank" rel="noopener">
-               BUTI SHOP 運営
-            </a>
-        </div>
+<div class="footer-note">
+    この規約は管理者またはスタッフにより、予告なく変更される場合があります。<br><br>
+    最終更新日：2025/10/26 01:10<br>
+    代表：
+    <a href="https://discord.com/users/1391095617790677073"
+       target="_blank" rel="noopener"
+       class="rep-link">
+       BUTI SHOP 運営
+    </a>
+</div>
 
-    </div>
 </div>
 
 <footer>
