@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #14001a, #2d0033);
-    color: #fff;
+    background: linear-gradient(135deg, #1a001f, #2d0033);
+    color: white;
 }
 
 header {
@@ -20,73 +20,90 @@ header {
     box-shadow: 0 0 20px #a855f7;
 }
 
+header h1 {
+    margin: 0;
+    color: #e9d5ff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
 nav a {
-    color: #d8b4fe;
-    margin: 0 15px;
+    color: #e9d5ff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
+nav a:hover {
+    color: #c084fc;
 }
 
-h2 {
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.products {
+    padding: 60px 20px;
     text-align: center;
+}
+
+.products h2 {
     color: #f5d0fe;
     margin-bottom: 40px;
 }
 
-.product-grid {
+.product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.product-card {
-    background: #24002e;
-    border-radius: 18px;
+.product {
+    background: #2a0038;
     padding: 25px;
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(168,85,247,.4);
     transition: 0.3s;
 }
 
-.product-card:hover {
+.product:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 35px #c084fc;
 }
 
-.product-card h3 {
-    margin-top: 0;
-    color: #f5d0fe;
-}
-
-.price {
-    color: #c084fc;
-    font-size: 22px;
-    margin: 10px 0;
-}
-
-.desc {
-    font-size: 14px;
+.product h3 {
     color: #e9d5ff;
 }
 
-.button {
+.product p {
+    color: #d8b4fe;
+}
+
+.product a {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 28px;
-    background: #9333ea;
-    border-radius: 25px;
-    color: #fff;
+    margin-top: 15px;
+    color: #c084fc;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer {
-    margin-top: 60px;
+    background: #1a001f;
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -98,39 +115,37 @@ footer {
 
 <header>
     <h1>BUTI SHOP</h1>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
 </header>
 
-<div class="container">
-    <h2>主な商品</h2>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="tos.html">Tos</a>
+</nav>
 
-    <div class="product-grid">
+<section class="products fade-in">
+    <h2>商品一覧</h2>
 
-        <div class="product-card">
+    <div class="product-list">
+        <div class="product">
             <h3>Server Boost</h3>
-            <div class="price">1m ¥850 / 3m ¥1,000</div>
-            <p class="desc">即納対応・超高品質</p>
+            <p>即納・高品質サーバーブースト</p>
         </div>
 
-        <div class="product-card">
-            <h3>Bot権限</h3>
-            <div class="price">¥450</div>
-            <p class="desc">サポート付き・安心</p>
+        <div class="product">
+            <h3>Discord 装飾</h3>
+            <p>プロフィール・サーバー装飾</p>
         </div>
 
-        <div class="product-card">
-            <h3>ソースコード</h3>
-            <div class="price">”要相談”</div>
-            <p class="desc">高品質なコードを作成します</p>
+        <div class="product">
+            <h3>Bot制作</h3>
+            <p>販売・管理用Bot制作</p>
         </div>
-
     </div>
-</div>
+</section>
 
 <footer>
-© 2026 BUTI SHOP
+    © 2026 BUTI SHOP
 </footer>
 
 </body>
