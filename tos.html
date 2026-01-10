@@ -39,7 +39,6 @@ nav a {
     color: #e9d5ff;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -47,45 +46,58 @@ nav a:hover {
     text-shadow: 0 0 10px #c084fc;
 }
 
-/* フェードイン */
-.fade-in {
-    opacity: 0;
-    transform: translateY(25px);
-    animation: fadeInUp 1.5s ease forwards;
+/* ===== 枠（そのまま表示） ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 30px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid #7c3aed;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
 }
 
-@keyframes fadeInUp {
+/* ===== 中身だけフェード ===== */
+.fade-text {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 1.6s ease forwards;
+}
+
+.fade-text:nth-child(1) { animation-delay: 0.1s; }
+.fade-text:nth-child(2) { animation-delay: 0.2s; }
+.fade-text:nth-child(3) { animation-delay: 0.3s; }
+.fade-text:nth-child(4) { animation-delay: 0.4s; }
+.fade-text:nth-child(5) { animation-delay: 0.5s; }
+.fade-text:nth-child(6) { animation-delay: 0.6s; }
+.fade-text:nth-child(7) { animation-delay: 0.7s; }
+.fade-text:nth-child(8) { animation-delay: 0.8s; }
+.fade-text:nth-child(9) { animation-delay: 0.9s; }
+.fade-text:nth-child(10){ animation-delay: 1.0s; }
+
+@keyframes fadeIn {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
 .container h2 {
     color: #f5d0fe;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
-.container p {
+.container p,
+.container li {
     color: #e9d5ff;
 }
 
-.container ul {
-    margin-left: 20px;
-}
-
 .footer-note {
-    margin-top: 50px;
+    margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #5b21b6;
-    color: #d8b4fe;
     font-size: 14px;
+    color: #d8b4fe;
 }
 
 .rep-link {
@@ -99,7 +111,7 @@ nav a:hover {
 }
 
 footer {
-    background: #1a001f;
+    margin-top: 40px;
     padding: 20px;
     text-align: center;
     font-size: 14px;
@@ -119,54 +131,39 @@ footer {
     <a href="tos.html">Tos</a>
 </nav>
 
-<div class="container fade-in">
+<div class="container">
 
-<p><strong>認証した時点でこの規約に同意したものとします。</strong></p>
+<p class="fade-text"><strong>認証した時点でこの規約に同意したものとします。</strong></p>
 
-<h2>｜1｜宣伝ルール</h2>
-<p>このサーバーでの宣伝はスロットのみです。<br>
-雑談等で勧誘した場合、タイムアウト処置を行います。</p>
+<h2 class="fade-text">｜1｜宣伝ルール</h2>
+<p class="fade-text">このサーバーでの宣伝はスロットのみです。雑談等での勧誘は禁止します。</p>
 
-<h2>｜2｜個人間の取引について</h2>
-<p>WTS・WTBなどの個人間取引で問題が発生した場合、<br>
-鯖主および責任者は一切の責任を負いません。</p>
+<h2 class="fade-text">｜2｜個人間取引</h2>
+<p class="fade-text">WTS・WTB等の個人間取引で発生したトラブルについて、運営は責任を負いません。</p>
 
-<h2>｜3｜迷惑行為</h2>
-<p>喧嘩・迷惑行為を公共の場で行った場合、<br>
-タイムアウトまたはBAN等の処置を取ります。</p>
+<h2 class="fade-text">｜3｜迷惑行為</h2>
+<p class="fade-text">公共の場での喧嘩・迷惑行為は処罰対象となります。</p>
 
-<h2>｜4｜催促・乞食行為</h2>
-<p>過度な催促・乞食行為は、<br>
-長期間のタイムアウトまたはBAN対象となります。</p>
+<h2 class="fade-text">｜4｜催促・乞食行為</h2>
+<p class="fade-text">過度な催促や乞食行為は禁止です。</p>
 
-<h2>｜5｜チケットルール</h2>
-<ul>
-    <li>チケット発行後、10分以上無言で放置</li>
-    <li>短期間で大量のチケットを発行</li>
+<h2 class="fade-text">｜5｜チケットルール</h2>
+<ul class="fade-text">
+    <li>無言放置（10分以上）</li>
+    <li>短時間での大量発行</li>
 </ul>
 
-<h2>｜6｜詐欺・不正行為</h2>
-<p>詐欺・なりすまし・虚偽報告などの行為が確認された場合、<br>
-即BANおよび通報対応を行います。</p>
+<h2 class="fade-text">｜6｜詐欺・不正</h2>
+<p class="fade-text">詐欺・なりすまし行為は即BAN対象です。</p>
 
-<h2>｜7｜取引時の注意点</h2>
-<p>トラブル防止のため、<br>
-スクリーンショットなどの証拠を残してください。</p>
+<h2 class="fade-text">｜7｜荒らし行為</h2>
+<p class="fade-text">スパム・暴言・煽り行為は禁止です。</p>
 
-<h2>｜8｜荒らし行為</h2>
-<p>スパム・暴言・煽り行為などは、<br>
-警告なしで即処罰対象となります。</p>
+<h2 class="fade-text">｜8｜複数アカウント</h2>
+<p class="fade-text">複垢利用が確認された場合、すべてのアカウントをBANします。</p>
 
-<h2>｜9｜複数アカウント</h2>
-<p>配布企画等での複数アカウント使用は禁止です。<br>
-発覚した場合、関連アカウントをすべてBANします。</p>
-
-<h2>｜10｜保証・支払い</h2>
-<p>実績が記載されていない場合、保証は無効です。<br>
-スタッフの指示なしに送金した場合、対応不可となります。</p>
-
-<div class="footer-note">
-    この規約は管理者またはスタッフにより、予告なく変更される場合があります。<br><br>
+<div class="footer-note fade-text">
+    この規約は予告なく変更される場合があります。<br><br>
     最終更新日：2025/10/26 01:10<br>
     代表：
     <a href="https://discord.com/users/1391095617790677073"
