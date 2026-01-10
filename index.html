@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>BUTI SHOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1a001f, #2d0033);
+            color: #ffffff;
+        }
+
+        header {
+            background: #3b0057;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #a855f7;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: #e9d5ff;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #d8b4fe;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #e9d5ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c084fc;
+            text-shadow: 0 0 10px #c084fc;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #f5d0fe;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #e9d5ff;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: #9333ea;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 0 20px #a855f7;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #a855f7;
+            box-shadow: 0 0 30px #c084fc;
+        }
+
+        .products {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .products h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #f5d0fe;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .product {
+            background: #2a0038;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .product h4 {
+            margin: 0 0 10px;
+            color: #e9d5ff;
+        }
+
+        footer {
+            background: #1a001f;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #c084fc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BUTI SHOP</h1>
+    <p>Premium Digital & Online Store</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to BUTI SHOP</h2>
+    <p>高品質なデジタル商品をあなたに</p>
+    <a href="#" class="button">商品を見る</a>
+</section>
+
+<section class="products">
+    <h3>人気商品</h3>
+    <div class="product-list">
+        <div class="product">
+            <h4>商品A</h4>
+            <p>高品質・即納対応</p>
+        </div>
+        <div class="product">
+            <h4>商品B</h4>
+            <p>安心・安全な取引</p>
+        </div>
+        <div class="product">
+            <h4>商品C</h4>
+            <p>サポート付き</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 BUTI SHOP. All Rights Reserved.
+</footer>
+
+</body>
+</html>
