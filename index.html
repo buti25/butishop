@@ -60,11 +60,20 @@
             font-size: 42px;
             margin-bottom: 15px;
             color: #f5d0fe;
+            min-height: 1.3em;
         }
 
-        .hero p {
-            font-size: 18px;
-            color: #e9d5ff;
+        /* タイピング用カーソル */
+        .cursor {
+            display: inline-block;
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .button {
@@ -139,7 +148,7 @@
 </nav>
 
 <section class="hero">
-    <h2>Welcome to BUTI SHOP</h2>
+    <h2 id="typing"></h2><span class="cursor">|</span>
     <a href="https://discord.gg/2butishop" class="button">参加する</a>
 </section>
 
@@ -164,6 +173,22 @@
 <footer>
     © 2026 BUTI SHOP. All Rights Reserved.
 </footer>
+
+<script>
+const text = "Welcome to BUTI SHOP";
+const speed = 120;
+let i = 0;
+
+function typingEffect() {
+    if (i < text.length) {
+        document.getElementById("typing").textContent += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, speed);
+    }
+}
+
+window.onload = typingEffect;
+</script>
 
 </body>
 </html>
