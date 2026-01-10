@@ -51,6 +51,20 @@
             text-shadow: 0 0 10px #c084fc;
         }
 
+        /* フェードイン */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.2s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -58,21 +72,17 @@
 
         .hero h2 {
             font-size: 42px;
-            margin-bottom: 15px;
             color: #f5d0fe;
             min-height: 1.3em;
         }
 
         .cursor {
-            display: inline-block;
             margin-left: 4px;
             animation: blink 1s infinite;
         }
 
         @keyframes blink {
-            0% { opacity: 1; }
             50% { opacity: 0; }
-            100% { opacity: 1; }
         }
 
         .button {
@@ -100,28 +110,7 @@
 
         .products h3 {
             font-size: 32px;
-            margin-bottom: 30px;
             color: #f5d0fe;
-        }
-
-        .product-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .product {
-            background: #2a0038;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
-        }
-
-        .product h4 {
-            margin: 0 0 10px;
-            color: #e9d5ff;
         }
 
         footer {
@@ -146,29 +135,15 @@
     <a href="tos.html">Tos</a>
 </nav>
 
-<section class="hero">
+<section class="hero fade-in">
     <h2>
         <span id="typing-text"></span><span id="cursor" class="cursor">|</span>
     </h2>
     <a href="https://discord.gg/2butishop" class="button">参加する</a>
 </section>
 
-<section class="products">
+<section class="products fade-in">
     <h3>人気サービス</h3>
-    <div class="product-list">
-        <div class="product">
-            <h4>Server Boost</h4>
-            <p>高品質・即納対応</p>
-        </div>
-        <div class="product">
-            <h4>Discord Decoration</h4>
-            <p>安心・安全な取引</p>
-        </div>
-        <div class="product">
-            <h4>Botサービス</h4>
-            <p>丁寧なサポート付き</p>
-        </div>
-    </div>
 </section>
 
 <footer>
