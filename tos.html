@@ -53,20 +53,43 @@
             background: #2a0038;
             border-radius: 15px;
             box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+            animation: fadeIn 1.8s ease forwards;
         }
 
         .tos-box h2 {
             text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
             color: #f5d0fe;
+            margin-bottom: 20px;
         }
 
-        pre {
-            white-space: pre-wrap;
-            font-family: "Segoe UI", sans-serif;
-            line-height: 1.8;
+        .tos-box h3 {
+            color: #f5d0fe;
+            margin-top: 25px;
+        }
+
+        .tos-box p,
+        .tos-box li {
             color: #e9d5ff;
+            line-height: 1.8;
+        }
+
+        .tos-box ul {
+            margin-left: 20px;
+        }
+
+        .footer-note {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #c084fc;
+        }
+
+        .footer-note a {
+            color: #c084fc;
+            text-decoration: none;
+        }
+
+        .footer-note a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -76,6 +99,17 @@
             font-size: 14px;
             color: #c084fc;
             margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -93,79 +127,66 @@
 
 <div class="tos-box">
     <h2>利用規約</h2>
-    <pre id="tos-text"></pre>
+
+    <p><strong>認証した時点で本規約に同意したものとみなします。</strong></p>
+
+    <h3>｜1｜宣伝ルール</h3>
+    <p><strong>このサーバーでの宣伝はスロットのみです。<br>
+    雑談等で勧誘した場合、タイムアウト処置を行います。</strong></p>
+
+    <h3>｜2｜個人間の取引について</h3>
+    <p><strong>WTS・WTBでの取引は仲介を行いません。<br>
+    取引に関するトラブルについて、鯖主および責任者は一切の責任を負いません。</strong></p>
+
+    <h3>｜3｜迷惑行為</h3>
+    <p><strong>公共の場での喧嘩・迷惑行為は、タイムアウトまたはB4N等の処置を行います。<br>
+    スタッフや有権者に迷惑をかけた場合も同様の対応を行う場合があります。</strong></p>
+
+    <h3>｜4｜催促・乞食行為</h3>
+    <p><strong>重度の催促・乞食行為は、長期間のタイムアウトまたはB4N対象となります。</strong></p>
+
+    <h3>｜5｜チケットルール</h3>
+    <ul>
+        <li>チケット発行後、10分以上無言で放置した場合</li>
+        <li>短期間に大量のチケットを発行した場合</li>
+    </ul>
+    <p><strong>上記に該当する場合、一時的なタイムアウト処置を行います。</strong></p>
+
+    <h3>｜6｜詐欺・不正行為</h3>
+    <p><strong>詐欺・なりすまし・虚偽報告・虚偽通報・不正取得などの悪質な行為が確認された場合、B4Nおよび通報対応を行います。</strong></p>
+
+    <h3>｜7｜取引時の注意点</h3>
+    <p><strong>トラブル防止のため、取引時は可能な限りスクリーンショットなどの証拠を残してください。<br>
+    証拠がない場合、対応できないことがあります。</strong></p>
+
+    <h3>｜8｜荒らし行為</h3>
+    <p><strong>スパム・無意味な連投・暴言・過度な煽りなどの荒らし行為は、警告なしで即タイムアウトまたはB4N対象となります。</strong></p>
+
+    <h3>｜9｜複数アカウントの利用について</h3>
+    <p><strong>配布企画等での複数アカウント（サブ垢等）の使用は禁止です。<br>
+    発覚した場合、関連するすべてのアカウントをB4N処理します。</strong></p>
+
+    <h3>｜10｜保証について</h3>
+    <p><strong>実績が記載されていない場合、保証は無効となります。<br>
+    責任者または当サーバーが利用不能となった場合の交換・返金保証はありません。</strong></p>
+
+    <h3>｜11｜支払いについて</h3>
+    <p><strong>対応前の送金・PayPay送金リンクでの支払いは対応不可とし、没収処置を行う場合があります。<br>
+    原則として、スタッフまたはBotから請求リンクやアドレスが送信された場合のみ送金してください。</strong></p>
+
+    <p class="footer-note">
+        この規約は管理者またはスタッフにより、予告なく変更される場合があります。<br><br>
+        最終更新日：2025/10/26 01:10<br>
+        代表：
+        <a href="https://discord.com/users/1391095617790677073" target="_blank">
+            @ぶち(3u7i)
+        </a>
+    </p>
 </div>
 
 <footer>
     © 2026 BUTI SHOP
 </footer>
-
-<script>
-const tosText = `## BUTI SHOP 利用規約
-
-認証した時点でこの規約に同意したとします。
-
-## ｜1｜宣伝ルール
-このサーバーでの宣伝はスロットのみです。
-雑談等で勧誘した人はタイムアウトします
-
-## ｜2｜個人間の取引について
-WTSやWTBでの取引は仲介を挟まずに何かあった場合、鯖主及び責任者は一切責任を取りません
-
-## ｜3｜迷惑行為
-喧嘩や迷惑が掛かることを公共の場でした場合タイムアウト・B4N等の処置を取ります
-また、このサーバーのスタッフ等の有権者に迷惑を掛けた場合はタイムアウト又はB4Nをする場合があります
-
-## ｜4｜催促・乞食行為
-重度の催促や乞食行為は長期間のタイムアウト又は鯖B4N等の処置を取ります
-
-## ｜5｜チケットルール
-下記の行為が確認された場合、一時的なタイムアウト処置を行います。
-・チケット発行後、10分以上無言で放置した場合
-・短期間に大量のチケットを発行した場合
-
-## ｜6｜詐欺・不正行為
-詐欺・なりすまし・虚偽報告・虚偽通報・不正取得などの悪質な行為が確認された場合、B4Nおよび通報対応を行います。
-
-## ｜7｜取引時の注意点
-トラブルを防ぐため、取引時は可能な限りスクリーンショットなどの証拠を残してください。証拠がない場合、対応できないことがあります。
-
-## ｜8｜荒らし行為
-スパム・無意味な連投・暴言・過度な煽りなどの荒らし行為は、
-警告なしで即タイムアウトまたはB4N対象になります。
-
-## ｜9｜複数アカウントの利用について
-不正防止のため、配布企画等での複数アカウント（サブ垢等）の使用は禁止です。
-発覚した場合、すべての関連アカウントをB4N処理します。
-
-## ｜10｜保証について
-実績書いてない場合、保証無効です
-責任者のアカウント及び当サーバーのどちらか又は両方が飛んでしまった場合の交換・返金保証はありません。
-
-## ｜11｜支払いについて
-対応されていないのに送金する行為・PayPay送金リンクでの支払いは対応不可 / 没収処置を取ります。
-原則 スタッフから請求リンクやアドレスが送信された場合のみ送金し、指示に従ってください。
-
-この規約は管理者またはスタッフにより、予告なく変更される場合があります。
-
-最終更新日：2025/10/26 01:10
-代表：https://discord.com/users/167336342227779584
-`;
-
-const speed = 230;
-let i = 0;
-const target = document.getElementById("tos-text");
-
-function typeTos() {
-    if (i < tosText.length) {
-        target.textContent += tosText.charAt(i);
-        i++;
-        setTimeout(typeTos, speed);
-    }
-}
-
-window.onload = typeTos;
-</script>
 
 </body>
 </html>
