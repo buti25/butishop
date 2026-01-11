@@ -1,123 +1,83 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>利用規約 | BUTI SHOP</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>BUTI SHOP 利用規約</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(135deg, #1a001f, #2d0033);
-    color: #ffffff;
-    line-height: 1.8;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #1a001f, #2d0033);
+            color: #ffffff;
+        }
 
-header {
-    background: #3b0057;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px #a855f7;
-}
+        header {
+            background: #3b0057;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #a855f7;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 26px;
-    letter-spacing: 1.5px;
-    color: #e9d5ff;
-}
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+            letter-spacing: 1.5px;
+            color: #e9d5ff;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px 0;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
 
-nav a {
-    color: #e9d5ff;
-    text-decoration: none;
-    font-weight: bold;
-}
+        nav a {
+            color: #e9d5ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-nav a:hover {
-    color: #c084fc;
-    text-shadow: 0 0 10px #c084fc;
-}
+        nav a:hover {
+            color: #c084fc;
+            text-shadow: 0 0 10px #c084fc;
+        }
 
-/* ===== 枠（そのまま表示） ===== */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 30px;
-    background: rgba(0, 0, 0, 0.35);
-    border: 1px solid #7c3aed;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
-}
+        .tos-box {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #2a0038;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+        }
 
-/* ===== 中身だけフェード ===== */
-.fade-text {
-    opacity: 0;
-    transform: translateY(15px);
-    animation: fadeIn 1.6s ease forwards;
-}
+        .tos-box h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #f5d0fe;
+        }
 
-.fade-text:nth-child(1) { animation-delay: 0.1s; }
-.fade-text:nth-child(2) { animation-delay: 0.2s; }
-.fade-text:nth-child(3) { animation-delay: 0.3s; }
-.fade-text:nth-child(4) { animation-delay: 0.4s; }
-.fade-text:nth-child(5) { animation-delay: 0.5s; }
-.fade-text:nth-child(6) { animation-delay: 0.6s; }
-.fade-text:nth-child(7) { animation-delay: 0.7s; }
-.fade-text:nth-child(8) { animation-delay: 0.8s; }
-.fade-text:nth-child(9) { animation-delay: 0.9s; }
-.fade-text:nth-child(10){ animation-delay: 1.0s; }
+        pre {
+            white-space: pre-wrap;
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.8;
+            color: #e9d5ff;
+        }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.container h2 {
-    color: #f5d0fe;
-    margin-top: 35px;
-}
-
-.container p,
-.container li {
-    color: #e9d5ff;
-}
-
-.footer-note {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #5b21b6;
-    font-size: 14px;
-    color: #d8b4fe;
-}
-
-.rep-link {
-    color: #c084fc;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.rep-link:hover {
-    text-shadow: 0 0 10px #c084fc;
-}
-
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #c084fc;
-}
-</style>
+        footer {
+            background: #1a001f;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #c084fc;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -128,56 +88,84 @@ footer {
 <nav>
     <a href="index.html">Home</a>
     <a href="product.html">Products</a>
-    <a href="tos.html">Tos</a>
+    <a href="tos.html">TOS</a>
 </nav>
 
-<div class="container">
-
-<p class="fade-text"><strong>認証した時点でこの規約に同意したものとします。</strong></p>
-
-<h2 class="fade-text">｜1｜宣伝ルール</h2>
-<p class="fade-text">このサーバーでの宣伝はスロットのみです。雑談等での勧誘は禁止します。</p>
-
-<h2 class="fade-text">｜2｜個人間取引</h2>
-<p class="fade-text">WTS・WTB等の個人間取引で発生したトラブルについて、運営は責任を負いません。</p>
-
-<h2 class="fade-text">｜3｜迷惑行為</h2>
-<p class="fade-text">公共の場での喧嘩・迷惑行為は処罰対象となります。</p>
-
-<h2 class="fade-text">｜4｜催促・乞食行為</h2>
-<p class="fade-text">過度な催促や乞食行為は禁止です。</p>
-
-<h2 class="fade-text">｜5｜チケットルール</h2>
-<ul class="fade-text">
-    <li>無言放置（10分以上）</li>
-    <li>短時間での大量発行</li>
-</ul>
-
-<h2 class="fade-text">｜6｜詐欺・不正</h2>
-<p class="fade-text">詐欺・なりすまし行為は即BAN対象です。</p>
-
-<h2 class="fade-text">｜7｜荒らし行為</h2>
-<p class="fade-text">スパム・暴言・煽り行為は禁止です。</p>
-
-<h2 class="fade-text">｜8｜複数アカウント</h2>
-<p class="fade-text">複垢利用が確認された場合、すべてのアカウントをBANします。</p>
-
-<div class="footer-note fade-text">
-    この規約は予告なく変更される場合があります。<br><br>
-    最終更新日：2025/10/26 01:10<br>
-    代表：
-    <a href="https://discord.com/users/1391095617790677073"
-       target="_blank" rel="noopener"
-       class="rep-link">
-       BUTI SHOP 運営
-    </a>
-</div>
-
+<div class="tos-box">
+    <h2>利用規約</h2>
+    <pre id="tos-text"></pre>
 </div>
 
 <footer>
-© 2026 BUTI SHOP
+    © 2026 BUTI SHOP
 </footer>
+
+<script>
+const tosText = `## 　　_ _ __BUTI SHOP__ __利用規約__
+_ _
+**認証した時点でこの規約に同意したとします。**
+
+### ｜1｜宣伝ルール
+**このサーバーでの宣伝はスロットのみです。**
+**雑談等で勧誘した人はタイムアウトします**
+
+### ｜2｜個人間の取引について
+**WTSやWTBでの取引は仲介を挟まずに何かあった場合、鯖主及び責任者は一切責任を取りません**
+
+### ｜3｜迷惑行為
+**喧嘩や迷惑が掛かることを公共の場でした場合タイムアウト・B4N等の処置を取ります
+また、このサーバーのスタッフ等の有権者に迷惑を掛けた場合はタイムアウト又はB4Nをする場合があります**
+
+### ｜4｜催促・乞食行為
+**重度の催促や乞食行為は長期間のタイムアウト又は鯖B4N等の処置を取ります**
+
+### ｜5｜チケットルール
+**下記の行為が確認された場合、一時的なタイムアウト処置を行います。
+- チケット発行後、10分以上無言で放置した場合
+- 短期間に大量のチケットを発行した場合**
+
+### ｜6｜詐欺・不正行為
+**詐欺・なりすまし・虚偽報告・虚偽通報・不正取得などの悪質な行為が確認された場合、B4Nおよび通報対応を行います。**
+
+### ｜7｜取引時の注意点
+**トラブルを防ぐため、取引時は可能な限りスクリーンショットなどの証拠を残してください。証拠がない場合、対応できないことがあります。**
+
+### ｜8｜荒らし行為
+**スパム・無意味な連投・暴言・過度な煽りなどの荒らし行為は、
+警告なしで即タイムアウトまたはB4N対象になります。**
+
+### ｜9｜複数アカウントの利用について
+**不正防止のため、配布企画等での複数アカウント（サブ垢等）の使用は禁止です。
+発覚した場合、すべての関連アカウントをB4N処理します。**
+
+### ｜10｜保証について
+**実績書いてない場合、保証無効です**
+**責任者のアカウント及び当サーバーのどちらか又は両方が飛んでしまった場合の交換・返金保証はありません。**
+
+### ｜11｜支払いについて
+**対応されていないのに送金する行為・PayPay送金リンクでの支払いは対応不可 / 没収処置を取ります。
+原則 スタッフから請求リンクやアドレスが送信された場合のみ送金し、指示に従ってください。**
+
+この規約は管理者またはスタッフにより、予告なく変更される場合があります。
+
+最終更新日：2025/10/26 01:10
+代表：https://discord.com/users/167336342227779584
+`;
+
+const speed = 230;
+let i = 0;
+const target = document.getElementById("tos-text");
+
+function typeTos() {
+    if (i < tosText.length) {
+        target.textContent += tosText.charAt(i);
+        i++;
+        setTimeout(typeTos, speed);
+    }
+}
+
+window.onload = typeTos;
+</script>
 
 </body>
 </html>
